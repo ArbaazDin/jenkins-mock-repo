@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
 
     res.status(200).json({
         status : "SUCCESS",
-        message : 'Good Morning!!'
+        message : 'Good Morn!!'
     })
     return;
 });
