@@ -1,13 +1,13 @@
 var expect  = require("chai").expect;
 var request = require("request");
 
-describe("test", function() {
+describe("node js app", function() { // for domain or per module
 
-    describe("test1", function() {
+    describe("hello request", function() { // per url
 
         const localhostUrl = "http://localhost:8080/hello";
 
-        it("should return status code 200 ", function(done){
+        it("hello request should return status code 200 ", function(done){ // multiple test for individual request
             request(localhostUrl, function(error, response, body ) {
                 expect(response.statusCode).to.equal(200);
                 done();
