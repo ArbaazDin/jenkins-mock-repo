@@ -1,11 +1,8 @@
 #!/bin/sh
 ssh ubuntu@13.127.62.187 <<EOF
-    cd ~/jenkins-mock-api
-    echo "printing files"
-    ls 
     cd ~/jenkins-mock-repo
-    echo "printing files inside repo"
-    ls 
+    echo "printing files"
+    ls
     git pull origin main
     curl -o-   https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh    | bash
     . ~/.nvm/nvm.sh
