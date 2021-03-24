@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     return;
 });
 
-app.get('/hello', (req, res) => res.status(200).send('Hello World !!'));
+app.get('/hello', (req, res) => res.status(200).send('Hello!!'));
 
 
 app.listen(port);
