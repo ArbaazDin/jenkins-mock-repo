@@ -7,6 +7,7 @@ ssh ubuntu@13.127.62.187 <<EOF
     nvm install v15.11.0
     npm install
     npm install -g nodemon pm2
-    pm2 restart ecosystem.config.js
+    ls
+    pm2 restart ./ecosystem.config.js
     exit
 EOF
