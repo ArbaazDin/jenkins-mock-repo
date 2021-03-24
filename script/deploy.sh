@@ -1,6 +1,6 @@
 #!/bin/sh
 ssh ubuntu@13.127.62.187 <<EOF
-    cd ~/jenkins-mock-repo
+    cd ~/jenkins-mock-api
     echo "printing files"
     ls 
     git pull origin main
